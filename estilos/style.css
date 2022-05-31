@@ -33,7 +33,7 @@ body{
 }
 /*------header----*/
 
-header{
+.header{
     width: 100%;
     grid-area: header;
 }
@@ -65,7 +65,6 @@ main{
 }
 
 h1{
-    font-family: 'Caveat', cursive;
     font-size: 60px;
     color: #b9867e;
     text-align: center;
@@ -88,11 +87,7 @@ h1{
 }
 
 
-main section h2{
-    background-color: #E6BA95;
-    color: #FAFDD6;
-    text-align: center;
-}
+
 .novedades{
     display: flex;
     justify-content: space-around;
@@ -103,7 +98,7 @@ main section h2{
 }
 .promo h2{
     color: #fafdd6;
-    font-size: 59px;
+    font-size: 50px;
     text-align: center;
     background-color: #e6ba95;
     letter-spacing: 15px;
@@ -135,9 +130,9 @@ main section h2{
 /*----footer----*/
 
 footer{
-    background-color: #CA965C;
+    background-color:  #E6BA95;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: rgb(251, 225, 187);
     line-height: 30px;
     grid-area: footer;
@@ -145,11 +140,13 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    width: 100%;
+    height: auto;
 }
-.footer ul{
+footer ul{
     list-style: none;
 }
-.footer ul li h3{
+footer ul li h3{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-decoration: none;
@@ -175,28 +172,11 @@ transform: translate(20px, 30px);
 
 /*css productos de uñas*/
 
-.grid-container-uñas{
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 0.5fr auto 0.5fr; 
-    grid-template-areas: 
-    "header header"
-    "mainuñas mainuñas"
-    "footer footer"; 
-}
 
 
 /*-----mainuñas------*/
 
-.mainuñas{
-    grid-area: mainuñas;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+
 .productosm h1{
     margin-top: 200px;
     text-align: center;
@@ -213,7 +193,9 @@ transform: translate(20px, 30px);
     margin: 100px;
 }
 
-.productosm .recomendadosm{
+
+
+.productosm > div{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -222,54 +204,39 @@ transform: translate(20px, 30px);
     font-size: 16px;
     text-transform: uppercase;
 }
-.productosm .recomendadosm div{
-    width: 350px;
-    height: 300px;
+.productosm > div div{
+    width: 400px;
+    height: 380px;
     border: 2px solid pink;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-.productosm .recomendadosm div img{
+.productosm div div img{
     width: 200px;
 }
-.boton{
+.productosm > div div h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+}
+.productosm >  div div button{
     width: 200px;
     height: 30px;
     position: relative;
-    background-color: #141414;
-    color: white;
+    background-color: #ec4bec;
+    color: rgb(244, 243, 244);
     margin-top: 20px;
     border: none;
     cursor: pointer;
     transition: .3s;
     border-radius: 5px;
 }
-.boton:hover{
+button :hover{
     background-color: #b9867e;
 }
 
-.productosm .comprasm{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.comprasm .productom{
-    width: 500px;
-    height: 400px;
-    margin: 50px;
-    border: 1px solid pink;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.comprasm .productom img{
-    width: 200px;
-
-}
 
 
 
@@ -279,111 +246,16 @@ transform: translate(20px, 30px);
 /*--------beauty------*/
 
 
-.grid-container-beauty{
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 0.5fr auto 0.5fr; 
-    grid-template-areas: 
-    "header header"
-    "mainbeauty mainbeauty"
-    "footer footer"; 
-}
+
 /*--------main-----*/
 
-.mainbeauty{
-    grid-area: mainbeauty;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-}
-.promob h2{
-    color: red;
-    background-color:  pink;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 90px;
-    text-align:center;
-    text-transform: uppercase;
-    margin-top: 200px;
-}
 
-.promob .kitb{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 200px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-.promob .kitb .kit{
-    width: 450px;
-    height: 550px;
-    margin-left: 100px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.kit img{
-    width: 400px;
-}
-
-.promob h3{
-    margin-top: 200px;
-    background-color: #e6ba95;
-    color: #604425;
-    font-size: 40px;
-    text-align: center;
-}
-
-.promob .productosb{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-}
-.productosb .pb{
-    width: 500px;
-    height: 400px;
-    margin: 50px;
-    border: 1px solid pink;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.pb img{
-    width: 200px;
-}
-
-.promob .serums{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    margin-bottom: 200px;
-    margin-top: 200px;
-}
-.serums .serumb{
-    width: 400px;
-    height: 500px;
-    margin: 60pxpx;
-    border: 1px solid pink;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.serumb img{
-    width: 200px;
+.productosm h3{
+    color: #785f43;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    background-color: #e7bfa8;
+    margin: 100px;
 }
 
 
@@ -392,135 +264,35 @@ transform: translate(20px, 30px);
 
 
 
-.grid-container-pelu{
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 0.5fr auto 0.5fr; 
-    grid-template-areas: 
-    "header header"
-    "mainpelu mainpelu"
-    "footer footer"; 
-}
-
 /*---------main-------*/
-
-.productosp{
-    width: 100%;
-    height: auto;
-    grid-area: mainpelu;
+.imagenp{
+    margin-top: 150px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-}
-.productosp .productos{
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-
-.productosp .imagenp img{
-    width: 90%;
-    height: 650px;
-    margin: 120px;
-    border-radius: 10%;
-}
-
-.productos > div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.productos > div div{
-    width: 400px;
-    height: 300px;
-    border: 1px solid pink;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-
-}
-.productos div div  img{
-    width: 100px;
-    margin-bottom: 10px;
 }
 
-.peluqueria .wpro{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-.wpro .wproductos{
-    width: 400px;
-    height: 350px;
-    border: 1px solid pink;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 30px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-}
-
-.wproductos img{
-    width: 200px;
-    margin: 20px;
-}
 
 
 /*-------cursos-------*/
 
 
-.grid-container-cursos{
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 0.5fr auto 0.5fr; 
-    grid-template-areas: 
-    "header header"
-    "maincurso maincurso"
-    "footer footer"; 
-}
 
 
-.maincursos{
-    grid-area: maincurso;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;;
-    background-color: #0e0a0d;
-}
-.maincursos h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 80px;
-    margin-top: 200px;
-    text-transform: uppercase;
-    text-shadow: 0px 10px 10px;
-    color: palevioletred;
-}
-.maincursos .cursos{
+
+.cursos{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: black;
 }
 
 
 
 .cursos img{
-    width: 90%;
-    height: 500px;
+    width: 50%;
+    height: 300px;
     margin: 30px;
     transition: all 1s ease;
 }
@@ -530,209 +302,15 @@ transform: translate(20px, 30px);
 }
 .formulario {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: white;
+    font-size: 30px;
+    color: rgb(25, 24, 24);
+    background-color: #d9ad79;
     text-transform: uppercase;
     margin: 100px;
 }
 
 
 /*----------media-------*/
-@media screen and (max-width:1490px){
-    .headersections{
-        width: 95%;
-    }
-}
-@media screen and (max-width:1305px){
-    .headersections{
-        width: 90%;
-    }
-}
-@media screen and (max-width:1179px){
-    .productosp .imagenp{
-        width: 90%;
-    }
-}
-
-@media screen and (max-width:1100px){
-    .headersections{
-        width: 90%;
-    }
-    .promob h2{
-        font-size: 80px;
-    }
-    .kitb{
-        width: 90%;
-    }
-    .kitb .kit img{
-        width: 300px;
-    }
-    .productosb{
-        width: 900px;
-    }
-    .promob .serums{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .promob .serums{
-        width: 900px;
-    }
-    .serums .serumb{
-        margin: 50px;
-        display: flex;
-    }
-
-}
-
-@media screen and (max-width:1095px){
-    .promob{
-        width: 80%;
-    }
-    .promob h2{
-        margin-left: 50px;
-    }
-    .promob h3{
-        margin-left: 50px;
-    }
-}
-
-@media screen and (max-width:1000px){
-    .productosb{
-        width: 800px;
-    }
-
-
-}
-
-
-
-@media  screen and (max-width:1050px){
-    .productosm .recomendadosm div{
-        margin: 50px;
-    }
-}
-@media screen and (max-width:946px){
-    .headersections{
-        width: 80%;
-    }
-}
-@media screen and (max-width:900px){
-    .promob .serums{
-        width: 800px;
-    }
-    .productosp .imagenp{
-        width: 80%;
-    }
-}
-@media  screen and (max-width:840px){
-    .headersections .navsections ul{
-        width: 70%;
-    }
-    .headersections img{
-        width: 250px;
-    }
-    .headersections .navsections ul li{
-        width: 30%;
-    }
-    .promob h2{
-        font-size: 60px;
-    }
-    .promob h3{
-        margin-left: 80px;
-    }
-}
-
-@media screen and (max-width:700px){
-    .headersections{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        position: absolute;
-    }
-    .headersections .navsections ul{
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .mainuñas{
-        margin-top: 680px;
-    }
-    .mainbeauty{
-        margin-top: 680px;
-    }
-    .promob .kitb{
-        display: flex;
-        flex-direction: column;
-    }
-    .productosp{
-        margin-top: 750px;
-    }
-}
-@media  screen and (max-width:690px){
-    header{
-        width: 100%;
-    }
-    nav .nav{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    header nav ul{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    header nav ul li{
-        padding: 10px;
-        margin: 10px;
-    }
-
-    .hero{
-        width: 100%
-    }
-
-    .descuento img{
-        height: 200px;
-    }
-}
-
-
-
-@media screen and (max-width:600px){
-    .productosm .recomendadosm{
-        width: 450px;
-    }
-    .comprasm{
-        width: 450px;
-    }
-}
-
-
-
-@media screen and (max-width:450px){
-    .promo div div{
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    .promo div div img{
-        width: 250px;
-        height: 200px;
-    }
-    .productom .recomendadosm{
-        width: 400px;
-    }
-    .comprasm{
-        width: 400px;
-    }
-}
-
-
-
 
 
 
