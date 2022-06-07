@@ -14,66 +14,79 @@
 <body>
     <div class="grid-container">
         <header class="header">
-            <nav class="navbar navbar-expand-lg" style="background-color:  #ebb9b2;" >
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <img src="./img/1logo.jpg" alt="" width="180" height="90">
-                    </a>
-                </div>
+            <nav class="navbar fixed-top" style="background-color: rgba(249, 143, 159, 0.436);">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#" style="color: white; font-size: 16px;">nosotras</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img src="./img/1logo.jpg" alt="" width="150" height="80">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="./index.html">inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="./secciones/productosdeuñas.html">productos de uñas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./secciones/beauty.html">beauty</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./secciones/productosdepeluqueria.html">productos de
-                                    peluqueria</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./secciones/cursosytalleres.html">cursos y talleres</a>
-                            </li>
-                        </ul>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">nosotras insumo</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="./index.html">nosotras</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./secciones/productosdeuñas.html">productos de uñas</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="./secciones/beauty.html">beauty</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="./secciones/productosdepeluqueria.html">productos de
+                                        peluqueria</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="./secciones/cursosytalleres.html">cursos y talleres</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
         </header>
         <main class="main">
-            <section class="hero">
-            </section>
-            <section class="desc">
+            <section class="principal">
+                <img src="./img/mujeres2.jpg" alt="foto">
                 <h1>Todo lo que necesitas para tu Estética</h1>
-                <div class="descuento">
-                    <img src="./img/descuento1.jpeg" alt="descuento">
-                </div>
             </section>
             <section>
-                <div class="novedades">
-                    <figure>
-                        <img src="./img/lampled.jpg" alt="imagen de producto" width="300" height="350">
-                        <figcaption>lampara led para uñas</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="./img/shialuronicl.jpg" alt="producto" width="300" height="350">
-                        <figcaption>acido hialuronico facial</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="./img/dmage.jpg" alt="imagen del producto" width="300" height="350">
-                        <figcaption>producto facial dmage</figcaption>
-                    </figure>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/1brochas.jpg" class="d-block w-100" height="800px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/1labial.jpg" class="d-block w-100" height="800px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/serumimg.jpg" class="d-block w-100" height="800px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./img/mascaracomprimida.jpg" class="d-block w-100" height="800px" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </section>
             <section class="promo">
@@ -81,21 +94,24 @@
                 <div>
                     <div>
                         <img src="./img/idpromo.jpg" alt="promocion" width="450" height="400">
-                        <p class="oferta"> Vitamica C color</p>
+                        <p>vitamina c color. ideal para pieles secas sin luminocidad. varios tonos</p>
+                        <button>comprar</button>
                     </div>
                     <div>
                         <img src="./img/idpromo1.jpg" alt="promocion" width="450" height="400">
-                        <p class="oferta"> Serum Gloss Facial</p>
+                        <p>serum facial hidratante efecto gloss</p>
+                        <button>comprar </button>
                     </div>
                     <div>
                         <img src="./img/idpromo2.jpg" alt="promocion" width="450" height="400">
-                        <p class="oferta"> Serum Vitamina C</p>
+                        <p>serum facial vitamina c . regeneradora de la piel</p>
+                        <button>comprar</button>
                     </div>
                 </div>
             </section>
-            <section class="nuestrasm">
+            <section class="marcas">
                 <h2> Nuestras Marcas</h2>
-                <div class="marcas">
+                <div>
                     <img src="./img/logolid.jpg" alt="logo de la marca" width="100" height="130">
                     <img src="./img/logoch.jpg" alt="logo de la marca" width="100" height="100">
                 </div>

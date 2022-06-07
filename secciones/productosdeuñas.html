@@ -14,45 +14,50 @@
 <body>
     <div class="grid-container">
         <header class="header">
-            <nav class="navbar navbar-expand-lg" style="background-color:  #ebb9b2;" >
-                <div class="container">
-                    <a class="navbar-brand" href="#">
-                        <img src="../img/1logo.jpg" alt="" width="180" height="90">
-                    </a>
-                </div>
+            <nav class="navbar fixed-top" style="background-color: rgba(249, 143, 159, 0.436);">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#" style="color: white; font-size: 16px;">nosotras</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img src="../img/1logo.jpg" alt="" width="150" height="80">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="../index.html">inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="../secciones/productosdeuñas.html">productos de uñas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../secciones/beauty.html">beauty</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../secciones/productosdepeluqueria.html">productos de
-                                    peluqueria</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="../secciones/cursosytalleres.html">cursos y talleres</a>
-                            </li>
-                        </ul>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">nosotras insumo</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">nosotras</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../secciones/productosdeuñas.html">productos de uñas</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="../secciones/beauty.html">beauty</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="../secciones/productosdepeluqueria.html">productos de
+                                        peluqueria</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="../secciones/cursosytalleres.html">cursos y talleres</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </nav>
         </header>
-        <main>
-            <section class="productosm">
+        <main class="main">
+            <section class="productos">
                 <h1>todo para tus uñas</h1>
                 <h2>nuestros recomendados</h2>
                 <div>
@@ -111,7 +116,7 @@
                         <button>comprar</button>
                     </div>
                 </div>
-                </secttion>
+            </secttion>
         </main>
         <footer class="footer">
             <ul>
