@@ -1,2 +1,240 @@
 @import "../base/variables";
 
+main{
+    font-family: $tipografia-principal;
+    font-size: $fuente-media;
+    grid-area: main;
+    width: 100%;
+    height: auto;
+    .principal{
+        width: 100%;
+        height: 800px;
+        position: relative;
+        margin: 60px 10px 10px 10px;
+        border-radius: 20px;
+        box-shadow: 5px 8px 12px black;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        h1{
+            font-family: $tipografia-principal;
+            font-size: $fuente-extra;
+            color: $texto-alternativo;
+            position: absolute;
+            top: 70%;
+            left: 5%;
+            transform: translate(-50% -50%);
+            text-shadow: 0px 8px 4px rgba(0,0,0,0.8);
+        }
+    }
+    .promo{
+        h2{
+            color: $texto;
+            font-size: $fuente-grande;
+            text-align: center;
+            background-color: $fondo;
+            letter-spacing: 15px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+        div{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                p{
+                    font-family: $tipografia-alternativa;
+                    font-size: $fuente-normal;
+                }
+                button{
+                    width: 150px;
+                    height: 60px;
+                    background-color: $fondo-alternativo;
+                    font-family: $tipografia-alternativa;
+                    font-size: $fuente-peque;
+                    text-transform: uppercase;
+                    border-radius: 2px 2px;
+                    border-color:$primario;
+                }
+            }
+        }
+    }
+    .marcas{
+        h2{
+            background-color: $fondo;
+            text-align: center;
+            margin-top: $fuente-peque;
+            color: $texto;
+            font-size: $fuente-grande;
+        }
+        div{
+            display: flex;
+            flex-direction:row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+    }
+    /*--------------main de uñas-----*/
+    .productos{
+        h1{
+            margin-top: 200px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Yeseva One', cursive;
+            font-size: $fuente-mediagrande;
+            margin-bottom: 200px;
+            text-shadow: 0px 10px 10px;
+        }
+        h2{
+            color: $texto-alternativo;
+            background-color: $fondo;
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-size: $fuente-grande;
+        }
+        div{
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            font-family: $tipografia-alternativa;
+            font-size: $fuente-normal;
+            text-transform: uppercase;
+            margin: $fuente-extra;
+            div{
+                background-color: $fondo;
+                width: 300px;
+                height: 430px;
+                display: flex;
+                flex-direction: column;
+                border-radius: 8px;
+                box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+                overflow: hidden;
+                margin: $fuente-grande;
+                text-align: center;
+                transition: all 0.25s;
+                img{
+                    width: 250px;
+                    height: 220px;
+                }
+                h3{
+                    font-weight: 600;
+                    font-family: $tipografia-alternativa;
+                    font-size: $fuente-normal;
+                    background-color: $texto-alternativo;
+                    color: $color-principal;
+                    margin-top: 10px;
+                }
+                p{
+                    padding: 0 1rem;
+                    font-size: $fuente-normal;
+                    font-weight: 300;
+                }
+                button{
+                    font-weight: 500;
+                    width: 200px;
+                    height: $fuente-media;
+                    position: relative;
+                    background-color: $secundario;
+                    color: rgb(244, 243, 244);
+                    border: none;
+                    cursor: pointer;
+                    transition: .3s;
+                    border-radius: 5px;
+                }
+                &:hover{
+                    background-color: $fondo-alternativo;
+                }
+            }
+            &:hover{
+                transform: translateY(-15px);
+                box-shadow: 0 12px 16px rgba(0, 0, 0,0.2 );
+            }
+        }
+    }
+    /*--------beauty-----*/
+    .productos{
+        h2{
+            margin-top: 200px;
+        }
+    }
+    /*-----peluqueria----*/
+    .heropelu{
+        figure{
+            img{
+                width: 90%;
+                height: 800px;
+                position: relative;
+                margin: 80px 50px 50px 50px;
+                border-radius: $fuente-peque;
+                box-shadow: 5px 8px 12px black;
+            }
+        }
+        p{
+            font-family: $tipografia-principal;
+            font-size: $fuente-extra;
+            color: $texto-alternativo;
+            background-color: rgba(255, 255, 255, 0.267);
+            position: absolute;
+            top: 95%;
+            left: 150px;
+            transform: translate(-50% -50%);
+            text-shadow: 0px 8px 4px rgba(0,0,0,0.8);
+        }
+    }
+    /*------cursos-----*/
+    .h1cursos{
+        margin-top: 120px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: $fuente-media-extra;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 0 3px 3px;
+    }
+    .cursos{
+        display: flex;
+        flex-direction: column;
+        background-color: $fondo;
+        div{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            height: auto;
+            img{
+                width: 800px;
+                height: 300px;
+                margin: $fuente-media;
+                transition: all 1s ease;
+            }
+            &:hover{
+                height: 600px;
+                width: 100%;
+            }
+            p{
+                font-family: $tipografia-alternativa;
+                font-size: $fuente-peque;
+                text-align: justify;
+                color: $texto-alternativo;
+            }
+        }
+    }
+    .formulario{
+        font-family: $tipografia-alternativa;
+        font-size: $fuente-media;
+        color: rgb(25, 24, 24);
+        background-color: #d9ad79;
+        text-transform: uppercase;
+        margin: $fuente-extra;
+    }
+}

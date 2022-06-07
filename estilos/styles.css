@@ -1,17 +1,542 @@
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Julius+Sans+One&family=Luckiest+Guy&family=Ms+Madi&family=Square+Peg&family=Tajawal:wght@200&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script&family=Julius+Sans+One&family=Luckiest+Guy&family=Ms+Madi&family=Square+Peg&family=Tajawal:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Luckiest+Guy&family=Ms+Madi&family=Square+Peg&family=Tajawal:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Luckiest+Guy&family=Ms+Madi&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Julius+Sans+One&family=Luckiest+Guy&family=Ms+Madi&family=Square+Peg&family=Tajawal:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@400;500&family=Julius+Sans+One&family=Luckiest+Guy&family=Ms+Madi&family=Square+Peg&family=Tajawal:wght@200&family=Yeseva+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
 }
 
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px;
+
+.grid-container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.5fr auto 0.5fr; 
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer"; 
+}
+/*------header----*/
+
+.header{
+    width: 100%;
+    grid-area: header;
+}
+.header .navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.header {
-  width: 100%;
-  grid-area: header;
+
+
+/*------main-----*/
+main{
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    grid-area: main;
+    width: 100%;
+    height: auto;
 }
-/*# sourceMappingURL=styles.css.map */
+.principal{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    margin: 60px 10px 10px 10px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+}
+.principal img{
+    width: 100%;
+    height: 100%;
+
+}
+.principal h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    transform: translate(-50% -50%);
+    text-shadow: 0px 8px 4px rgba(0,0,0,0.8);
+}
+
+
+
+
+.promo h2{
+    color: #fafdd6;
+    font-size: 50px;
+    text-align: center;
+    background-color: #e6ba95;
+    letter-spacing: 15px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.promo>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.promo div div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.promo div div p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.promo div div button{
+    width: 150px;
+    height: 60px;
+    background-color: pink;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 2px 2px;
+    border-color: #ec4bec;
+}
+.marcas h2{
+    background-color: #e6ba95;
+    text-align: center;
+    margin-top: 20px;
+    color: #fafdd6 ;
+    font-size: 50px;
+}
+.marcas div{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*----footer----*/
+
+footer{
+    background-color:  #E6BA95;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: rgb(251, 225, 187);
+    line-height: 30px;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: auto;
+}
+footer ul{
+    list-style: none;
+}
+footer ul li h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+.redes{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 3s;
+}
+.redes:hover{
+transform: translate(20px, 30px);
+}
+.redes img{
+    width: 50px;
+    height: auto;
+}
+
+
+
+
+
+
+/*css productos de uñas*/
+
+
+
+/*-----mainuñas------*/
+
+.grid-container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 0.5fr auto 0.5fr; 
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer"; 
+}
+
+
+.productos h1{
+    margin-top: 200px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Yeseva One', cursive;
+    font-size: 80px;
+    margin-bottom: 200px;
+    text-shadow: 0px 10px 10px;
+}
+.productos h2{
+    color: white;
+    background-color: #b9867e;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+}
+
+
+
+
+.productos  div{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 100px;
+}
+.productos  div div{
+    background-color: #e6ba95;
+    width: 300px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 50px;
+    text-align: center;
+    transition: all 0.25s;
+}
+.productos div div:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0,0.2 );
+}
+.productos div div img{
+    width: 250px;
+    height: 220px;
+}
+.productos   div div h3{
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+}
+.productos div div p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+.productos   div div button{
+    font-weight: 500;
+    width: 200px;
+    height: 30px;
+    position: relative;
+    background-color: #b9867e;
+    color: rgb(244, 243, 244);
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 5px;
+}
+button :hover{
+    background-color: #b9867e;
+}
+
+
+
+
+
+
+
+/*--------beauty------*/
+
+
+
+/*--------main-----*/
+
+.productos h2{
+    margin-top: 200px;
+}
+
+
+
+
+
+/*--------productos de peluqueria----*/
+
+
+
+/*---------main-------*/
+.heropelu figure img{
+    width: 90%;
+    height: 800px;
+    position: relative;
+    margin: 80px 50px 50px 50px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+
+
+}
+.heropelu  p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.267);
+    position: absolute;
+    top: 95%;
+    left: 150px;
+    transform: translate(-50% -50%);
+    text-shadow: 0px 8px 4px rgba(0,0,0,0.8);
+}
+
+
+
+/*-------cursos-------*/
+
+
+main .h1cursos{
+    margin-top: 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 3px 3px;
+}
+
+
+.cursos{
+    display: flex;
+    flex-direction: column;
+    background-color: #E6BA95;
+}
+
+.cursos div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+}
+
+
+
+.cursos div img{
+    width: 800px;
+    height: 300px;
+    margin: 30px;
+    transition: all 1s ease;
+}
+.cursos div img:hover{
+    height: 600px;
+    width: 100%;
+}
+.cursos div p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+}
+.formulario {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: rgb(25, 24, 24);
+    background-color: #d9ad79;
+    text-transform: uppercase;
+    margin: 100px;
+}
+
+
+/*----------media-------*/
+@media screen and (max-width: 1700px){
+    .heropelu  p{
+        top: 80%;
+    }
+}
+@media screen and (max-width: 1440px){
+    .productos h1{
+        font-size: 60px;
+    }
+    .productos div{
+        margin: 20px;
+    }
+    .productos  div div{
+        margin: 20px;
+    }
+}
+@media screen and (max-width: 1350px){
+    .productos div{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1390px){
+    .principal h1{
+        font-size: 80px;
+    }
+    .heropelu p{
+        font-size: 80px;
+        left: 15%;
+    }
+}
+@media screen and (max-width: 1260px){
+    .principal{
+        width: 95%;
+        height: 600px;
+        margin: 100px 30px 30px 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .heropelu p{
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 1170px){
+    .principal h1{
+        font-size: 60px;
+        text-align: center;
+    }
+    .heropelu figure img{
+        height: 650px;
+    }
+    .heropelu p{
+        top: 65%;
+        font-size: 70px;
+        left: 15%;
+    }
+}
+@media screen and (max-width: 1040px){
+    .heropelu{
+        margin-top: 90px;
+    }
+    .heropelu p{
+        top: 79%;
+        left: 10%;
+    }
+}
+@media screen and (max-width: 938px){
+    .heropelu figure img{
+        height: 550px;
+        width: 89%;
+    }
+    .heropelu p{
+        font-size: 60px;
+        top: 70%;
+    }
+}
+@media screen and (max-width: 810px){
+    .heropelu p{
+        font-size: 50px;
+    }
+}
+
+
+@media screen and (max-width: 770px){
+    .cursos div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        }
+        .cursos div img{
+            width: 80%;
+            height: 200px;
+            margin-left: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cursos div p{
+            font-size: 16px;
+            text-align: center;
+            margin: 10px;
+        }
+}
+@media screen and (max-width: 650px){
+    .heropelu figure img{
+        height: 500px;
+    }
+    .heropelu p{
+        font-size: 40px;
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .principal{
+        width: 100%;
+        height: auto;
+        margin-left: 0%;
+    }
+    .principal h1{
+        font-size: 40px;
+    }
+    main .h1cursos{
+        margin-top: 200px;
+        font-size: 30px;
+    }
+    .productos h1{
+        font-size: 40px;
+    }
+    .heropelu figure img{
+        height: 460px;
+    }
+    .heropelu p{
+        font-size: 35px;
+        top: 65%;
+    }
+}
+@media screen and (max-width: 520px){
+    .productos h1{
+        font-size: 30px;
+    }
+    .productos h2{
+        font-size: 30px;
+    }
+    .heropelu p{
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+    /*# sourceappingURL=styles.css.map*/

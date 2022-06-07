@@ -1,2 +1,37 @@
 @import "../base/variables";
 
+footer{
+    background-color: $fondo;
+    font-family:$tipografia-alternativa;
+    font-size: $fuente-normal;
+    color: rgb(251, 225, 187);
+    line-height: $fuente-media;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $fuente-peque;
+    width: 100%;
+    height: auto;
+    ul{
+        list-style: none;
+        li{
+            h3{
+                font-family: $tipografia-alternativa;
+                font-size: $fuente-peque;
+                text-decoration: none;
+                color: $primario;
+            }
+        }
+    }
+    .redes{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        transition: all 3s;
+        img{
+            width: $fuente-grande;
+            height: auto;
+        }
+    }
+}
