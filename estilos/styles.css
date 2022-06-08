@@ -469,8 +469,10 @@ main .h1cursos{
     }
     .principal{
         height: 500px;
+        margin-bottom: 20px;
     }
 }
+
 
 
 @media screen and (max-width: 770px){
