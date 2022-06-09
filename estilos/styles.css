@@ -353,8 +353,7 @@ main .h1cursos{
     transition: all 1s ease;
 }
 .cursos div img:hover{
-    height: 600px;
-    width: 100%;
+    height: 400px;
 }
 .cursos div p{
     font-family: Arial, Helvetica, sans-serif;
@@ -442,7 +441,9 @@ main .h1cursos{
     }
 }
 @media screen and (max-width:1000px){
-
+    .productos div{
+        margin-left: 90px;
+    }
 }
 @media screen and (max-width: 938px){
     .heropelu figure img{
@@ -454,6 +455,7 @@ main .h1cursos{
         top: 70%;
     }
 }
+
 @media screen and (max-width: 884px){
     .principal{
         width: 100%;
@@ -462,10 +464,20 @@ main .h1cursos{
     .principal h1{
         font-size: 50px;
     }
+    .d-block-w-100{
+        height: 600px;
+    }
+
+
 }
 @media screen and (max-width: 810px){
+    .logoimg{
+        height: 70px;
+        width: 130px;
+    }
     .heropelu p{
-        font-size: 50px;
+        left: 10%;
+        font-size: 55px;
     }
     .principal{
         height: 500px;
@@ -505,6 +517,16 @@ main .h1cursos{
     }
     .principal h1{
         font-size: 40px;
+    }
+    .heropelu p{
+        font-size: 52px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .heropelu p{
+        font-size: 45px;
+        left: 15%;
     }
 }
 
