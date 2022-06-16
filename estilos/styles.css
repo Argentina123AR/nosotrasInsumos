@@ -5,29 +5,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Luckiest+Guy&family=Ms+Madi&family=Square+Peg&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Julius+Sans+One&family=Luckiest+Guy&family=Ms+Madi&family=Square+Peg&family=Tajawal:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@400;500&family=Julius+Sans+One&family=Luckiest+Guy&family=Ms+Madi&family=Square+Peg&family=Tajawal:wght@200&family=Yeseva+One&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
 
 
-.grid-container{
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 0.5fr auto 0.5fr; 
-    grid-template-areas: 
-    "header header"
-    "main main"
-    "footer footer"; 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
 }
+
 /*------header----*/
 
-.header{
+.header {
     width: 100%;
     grid-area: header;
 }
@@ -36,89 +39,226 @@ body{
 
 
 /*------main-----*/
-main{
-    font-family: 'Caveat', cursive;
+main {
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 30px;
     grid-area: main;
     width: 100%;
     height: auto;
+    margin-top: 30px;
 }
-.principal{
-    width: 100%;
-    height: 800px;
-    position: relative;
-    margin: 60px 10px 10px 10px;
-    border-radius: 20px;
-    box-shadow: 5px 8px 12px black;
-}
-.principal img{
-    width: 100%;
-    height: 100%;
 
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, palevioletred, pink);
+    animation: hue-rotate 2s linear infinite alternate;
+    margin-top: 35px;
+    height: 150px;
+    text-shadow: 0px 10px 10px;
+    padding: 30px;
 }
-.principal h1{
-    font-family: 'Dancing Script', cursive;
-    font-size: 100px;
+
+@keyframes hue-rotate {
+    to {
+        filter: hue-rotate(90deg);
+    }
+}
+
+.card-descuento {
+    width: 100%;
+    height: auto;
+    background-color: rgb(252, 194, 203);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card-descuento div {
+    width: 300px;
+    height: 450px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.card-descuento div img {
+    width: 350px;
+    height: 400px;
+    inset: 0;
+    opacity: .7;
+    transition: transform .75s;
+    object-fit: cover;
+}
+
+.card-descuento div img:hover {
+    transform: scale(1.25);
+}
+
+.card-descuento div p {
+    width: 200px;
+    font-size: 40px;
     color: white;
     position: absolute;
-    top: 70%;
-    left: 5%;
-    transform: translate(-50% -50%);
-    text-shadow: 0px 8px 4px rgba(0,0,0,0.8);
+    mix-blend-mode: screen;
+}
+.card-descuento div a{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.promo{
+    background-color: white;
+    height:auto;
 }
 
 
 
-
-.promo h2{
-    color: #fafdd6;
+.promo h2 {
+    color: white;
+    font-family:'Dancing Script', cursive;
     font-size: 50px;
     text-align: center;
+    text-transform:capitalize;
     background-color: #e6ba95;
-    letter-spacing: 15px;
-    margin-top: 25px;
-    margin-bottom: 20px;
 }
-.promo>div{
+
+.promo div {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 
 
-.promo div div{
+.promo div div {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-.promo div div p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    width: 400px;
 }
 
-.promo div div button{
+.promo div div p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.promo div div button {
     width: 150px;
     height: 60px;
     background-color: pink;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     border-radius: 2px 2px;
     border-color: #ec4bec;
 }
+.productos{
+    background-color: white;
+    height: auto;
+}
+.productos h2 {
+    color: white;
+    background-color: #b9867e;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+
+
+
+.productos div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.productos div div{
+    background-color: #e6ba95;
+    width: 300px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 50px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.productos div div:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.productos div div img{
+    width: 250px;
+    height: 220px;
+}
+
+.productos div div h3{
+    font-weight: 600;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+}
+
+.productos div div p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.productos div div button{
+    font-weight: 500;
+    width: 200px;
+    height: 30px;
+    position: relative;
+    background-color: #b9867e;
+    color: rgb(244, 243, 244);
+    border: none;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+button :hover{
+    background-color: #b9867e;
+}
+
+
+
+
 .marcas h2{
     background-color: #e6ba95;
     text-align: center;
-    margin-top: 20px;
-    color: #fafdd6 ;
+    color: #fafdd6;
+    font-family: 'Dancing Script', cursive;
     font-size: 50px;
+    text-transform: capitalize;
 }
+
 .marcas div{
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -126,10 +266,10 @@ main{
 /*----footer----*/
 
 footer{
-    background-color:  #E6BA95;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: radial-gradient(pink, #FFA1A1, #FF8AAE, #F900BF );;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
-    color: rgb(251, 225, 187);
+    color: black;
     line-height: 30px;
     grid-area: footer;
     display: flex;
@@ -138,26 +278,27 @@ footer{
     padding: 20px;
     width: 100%;
     height: auto;
+    text-transform: uppercase;
 }
+
 footer ul{
     list-style: none;
 }
+
 footer ul li h3{
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-decoration: none;
     color: white;
 }
+
 .redes{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    transition: all 3s;
 }
-.redes:hover{
-transform: translate(20px, 30px);
-}
-.redes img{
+
+
+.redes a img{
     width: 50px;
     height: auto;
 }
@@ -174,98 +315,45 @@ transform: translate(20px, 30px);
 /*-----mainuñas------*/
 
 .grid-container{
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 0.5fr auto 0.5fr; 
-    grid-template-areas: 
-    "header header"
-    "main main"
-    "footer footer"; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
 }
-
-
-.productos h1{
-    margin-top: 200px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Yeseva One', cursive;
-    font-size: 80px;
-    margin-bottom: 200px;
-    text-shadow: 0px 10px 10px;
+.columna{
+    height: 80vh;
+    display: flex;
+    border-style: double;
 }
-.productos h2{
-    color: white;
-    background-color: #b9867e;
-    text-align: center;
-    font-family: 'Dancing Script', cursive;
+.columna div{
+    width: 70%;
+    border: #333 3px;
+}
+.columna div h5{
     font-size: 50px;
+    width: 50%;
+    color: palevioletred;
+}
+
+.columna div p{
+    width: 70%;
+    font-size: 14px;
+    text-transform:initial;
+    text-align: justify;
+}
+
+.hero{
+    width: 30%;
+    background-image: url(../img/uñas-pintadas.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 
 
-
-.productos  div{
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    margin: 100px;
-}
-.productos  div div{
-    background-color: #e6ba95;
-    width: 300px;
-    height: 430px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    margin: 50px;
-    text-align: center;
-    transition: all 0.25s;
-}
-.productos div div:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0,0.2 );
-}
-.productos div div img{
-    width: 250px;
-    height: 220px;
-}
-.productos   div div h3{
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    background-color: white;
-    color: black;
-    margin-top: 10px;
-}
-.productos div div p{
-    padding: 0 1rem;
-    font-size: 16px;
-    font-weight: 300;
-}
-.productos   div div button{
-    font-weight: 500;
-    width: 200px;
-    height: 30px;
-    position: relative;
-    background-color: #b9867e;
-    color: rgb(244, 243, 244);
-    border: none;
-    cursor: pointer;
-    transition: .3s;
-    border-radius: 5px;
-}
-button :hover{
-    background-color: #b9867e;
-}
 
 
 
@@ -278,10 +366,88 @@ button :hover{
 
 
 /*--------main-----*/
-
-.productos h2{
-    margin-top: 200px;
+.promociones{
+    background-color: pink;
 }
+.promociones div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.promociones div div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid palevioletred;
+    width: 450px;
+    height: 500px;
+}
+.img1{
+    background-image: url(../img/cojeras.jpeg);
+    background-size: cover;
+    border-radius: 900px 900px 900px 900px;
+}
+.img2{
+    background-image: url(../img/masc-vitc.jpeg);
+    background-size: cover;
+    background-position:en;
+    background-size: 100%;
+    border-radius: 600px 600px 600px 600px;
+}
+
+.promociones div div button{
+    width: 100%;
+    height: 20vh;
+    background-color: rgba(255, 192, 203, 0.592);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: red;
+    border: none;
+}
+.columna-beauty{
+    height: 80vh;
+    display: flex;
+    border-style: double;
+    background-color: white;
+}
+.columna-beauty div{
+    width: 70%;
+    border: #333 3px;
+}
+.columna-beauty div h5{
+    margin-top: 20px;
+    color: palevioletred;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-shadow:pink 2px 2px;
+    text-align:center;
+}
+.columna-beauty div p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    margin: 30px;
+}
+.columna-beauty div ol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.columna-beauty div ol li{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.hero-beauty{
+    background-image: url(../img/facial.jpg);
+    width: 30%;
+    background-size: cover;
+    background-position: 100%;
+}
+
 
 
 
@@ -289,299 +455,255 @@ button :hover{
 
 /*--------productos de peluqueria----*/
 
-
+.tarjeta{
+    width: 100%;
+    height: 90vh;
+    background-image:url(../img/mujeres1-min.jpg) ;
+    background-size: cover;
+    background-position: 100%;
+    border: pink solid;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.a-curso{
+    font-size: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px;
+    background-color: pink;
+    mix-blend-mode: screen;
+}
 
 /*---------main-------*/
-.heropelu figure img{
-    width: 90%;
-    height: 800px;
-    position: relative;
-    margin: 80px 50px 50px 50px;
-    border-radius: 20px;
-    box-shadow: 5px 8px 12px black;
 
-
-}
-.heropelu  p{
-    font-family: 'Dancing Script', cursive;
-    font-size: 100px;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.267);
-    position: absolute;
-    top: 95%;
-    left: 150px;
-    transform: translate(-50% -50%);
-    text-shadow: 0px 8px 4px rgba(0,0,0,0.8);
-}
 
 
 
 /*-------cursos-------*/
-
-
-main .h1cursos{
-    margin-top: 120px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
+h2{
+    background-color: #b9867e;
+    color:pink;
     text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
     text-transform: uppercase;
-    text-shadow: 0 3px 3px;
 }
-
-
 .cursos{
+    width: 100%;
+    height: auto;
     display: flex;
-    flex-direction: column;
-    background-color: #E6BA95;
-}
-
-.cursos div{
-    display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: auto;
+    margin-bottom: 50px;
+}
+.cursos div{
+    width: 350px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
 }
 
 
 
-.cursos div img{
-    width: 800px;
-    height: 300px;
-    margin: 30px;
-    transition: all 1s ease;
+.curso-pelu{
+    width: 600px;
+    height:750px ;
+    background-image: url(../img/pelu.jpeg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.cursos div img:hover{
-    height: 400px;
-}
-.cursos div p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: justify;
-    color: white;
-}
-.formulario {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    color: rgb(25, 24, 24);
-    background-color: #d9ad79;
+.curso-h5{
+    font-size: 40px;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     text-transform: uppercase;
-    margin: 100px;
+    text-align: center;
+    color: black;
+}
+
+.curso-makeup{
+    width: 600px;
+    height:750px ;
+    background-image: url(../img/card-cursos.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cursos div p{
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.curso-manicuria{
+    width: 600px;
+    height:750px ;
+    background-image: url(../img/uñas-pintadas.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.formulario{
+    background-color: pink;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin: 20px;
+}
+.conocenos{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../img/girl.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #ffffff10;
+    opacity: 0.5;
+    margin-bottom: 20px;
+}
+
+.conocenos h5{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: #F900BF 5px 5px;
+}
+.conocenos p{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    opacity: 0.8;
 }
 
 
 /*----------media-------*/
-@media screen and (max-width: 1700px){
-    .heropelu  p{
-        top: 80%;
-    }
-}
-@media screen and (max-width: 1440px){
-    .productos h1{
-        font-size: 60px;
-    }
-    .productos div{
-        margin: 20px;
-    }
-    .productos  div div{
-        margin: 20px;
-    }
-}
-@media screen and (max-width: 1350px){
-    .productos div{
-        width: 80%;
-    }
-}
 
-@media screen and (max-width: 1390px){
-    .principal h1{
-        font-size: 80px;
-    }
-    .heropelu p{
-        font-size: 80px;
-        left: 15%;
-    }
-}
-@media screen and (max-width: 1260px){
-    .principal{
-        width: 100%;
-        height: 600px;
-        margin: 100px 0px 0px 0px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .heropelu p{
-        left: 10%;
-    }
-}
-
-@media screen and (max-width: 1170px){
-    .principal h1{
-        font-size: 60px;
-        text-align: center;
-    }
-    .heropelu figure img{
-        height: 650px;
-    }
-    .heropelu p{
-        top: 65%;
-        font-size: 70px;
-        left: 15%;
-    }
-}
-@media screen and (max-width: 1040px){
-    .heropelu{
-        margin-top: 90px;
-    }
-    .heropelu p{
-        top: 79%;
-        left: 10%;
-    }
-}
-@media screen and (max-width:1000px){
-    .productos div{
-        margin-left: 90px;
-    }
-}
-@media screen and (max-width: 938px){
-    .heropelu figure img{
-        height: 550px;
-        width: 89%;
-    }
-    .heropelu p{
-        font-size: 60px;
-        top: 70%;
-    }
-}
-
-@media screen and (max-width: 884px){
-    .principal{
-        width: 100%;
-        height: 600px;
-    }
-    .principal h1{
-        font-size: 50px;
-    }
-    .d-block-w-100{
-        height: 600px;
-    }
-
-
-}
-@media screen and (max-width: 810px){
-    .logoimg{
-        height: 70px;
-        width: 130px;
-    }
-    .heropelu p{
-        left: 10%;
-        font-size: 55px;
-    }
-    .principal{
-        height: 500px;
-        margin-bottom: 20px;
-    }
-}
-
-
-
-@media screen and (max-width: 770px){
-    .cursos div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        }
-        .cursos div img{
-            width: 80%;
-            height: 200px;
-            margin-left: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .cursos div p{
-            font-size: 16px;
-            text-align: center;
-            margin: 10px;
-        }
-}
-@media screen and (max-width:750px){
-    .principal{
-        width: 100%;
-        height: 450px;
-    }
-    .principal h1{
+@media screen and (max-width: 1290px){
+    .columna div h5{
         font-size: 40px;
     }
-    .heropelu p{
-        font-size: 52px;
+}
+
+
+@media screen and (max-width: 1050px){
+    .columna{
+        height: 70vh;
+    }
+    .columna div h5{
+        font-size: 30px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1000px){
+    h1{
+        font-size: 50px;
+    }
+    .conocenos p{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 970px){
+    .columna-beauty div h5{
+        font-size: 50px;
+    }
+    .columna-beauty div p{
+        text-align: justify;
+    }
+    .columna-beauty div ol li{
+        text-align: center;
+        margin-left: 10px;
     }
 }
 
-@media screen and (max-width:700px){
-    .heropelu p{
-        font-size: 45px;
-        left: 15%;
+@media screen and (max-width: 847px){
+    h1{
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (max-width: 785px){
+    .columna{
+        height: 60vh;
+    }
+    .columna div h5{
+        font-size: 20px;
+    }
+    .columna div p{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 770px){
+    .a-curso{
+        font-size: 100px;
+    }
+    .conocenos p{
+        font-size: 20px;
+    }
+    .conocenos{
+        background-position: 50%;
+    }
+}
+@media screen and (max-width: 690px){
+    .columna-beauty div h5{
+        font-size: 40px;
+    }
+    .columna-beauty div p{
+        font-size: 20px;
+    }
+    .columna-beauty div ol li{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 675px){
+    .columna-beauty{
+        height: 70vh;
+    }
+    .columna-beauty div p{
+        font-size: 16px;
+    }
+    .columna-beauty div ol li{
+        font-size: 16px;
     }
 }
 
 @media screen and (max-width: 650px){
-    .heropelu figure img{
-        height: 500px;
-    }
-    .heropelu p{
-        font-size: 40px;
-        left: 20%;
-    }
-}
-
-@media screen and (max-width: 630px){
-    .principal{
+    .columna div{
         width: 100%;
-        height: auto;
-        margin-left: 0%;
-    }
-    .principal h1{
-        font-size: 40px;
-    }
-    main .h1cursos{
-        margin-top: 200px;
-        font-size: 30px;
-    }
-    .productos h1{
-        font-size: 40px;
-    }
-    .heropelu figure img{
-        height: 460px;
-    }
-    .heropelu p{
-        font-size: 35px;
-        top: 65%;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
-@media screen and (max-width: 520px){
-    .productos h1{
-        font-size: 30px;
+@media screen and (max-width: 638px){
+    .columna div p{
+        font-size: 12px;
     }
-    .productos h2{
-        font-size: 30px;
+}
+@media screen and (max-width: 620px){
+    .a-curso{
+        font-size: 90px;
     }
-    .heropelu p{
-        font-size: 30px;
-    }
+
 }
 
 
 
 
-
-
-
-
-
-    /*# sourceappingURL=styles.css.map*/
+/*# sourceappingURL=styles.css.map*/
