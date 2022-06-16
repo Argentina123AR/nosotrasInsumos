@@ -9,6 +9,22 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
 }
+main{
+    font-family: $tipografia-principal;
+    font-size: $fuente-media;
+    width: $porcentaje-mayor;
+    height: auto;
+    margin-top: $fuente-media;
+}
+.curso-h5{
+    font-size: $fuente-media-grande;
+    background-color: $color-fondo;
+    backdrop-filter: blur($fuente-mini);
+    -webkit-backdrop-filter: blur($fuente-mini);
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-secundario;
+}
 
 
 .grid-container{

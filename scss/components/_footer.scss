@@ -1,26 +1,26 @@
 @import "../base/variables";
 
 footer{
-    background-color: $fondo;
-    font-family:$tipografia-alternativa;
-    font-size: $fuente-normal;
-    color: rgb(251, 225, 187);
+    background-image: radial-gradient($color-base, #FFA1A1, #FF8AAE, #F900BF);
+    font-family: $tipografia-alternativa;
+    font-size: $fuente-chica;
+    color: $color-secundario;
     line-height: $fuente-media;
     grid-area: footer;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: $fuente-peque;
-    width: 100%;
+    padding: $fuente-normal;
+    width: $porcentaje-mayor;
     height: auto;
+    text-transform: uppercase;
     ul{
         list-style: none;
         li{
             h3{
-                font-family: $tipografia-alternativa;
-                font-size: $fuente-peque;
+                font-size: $fuente-normal;
                 text-decoration: none;
-                color: $primario;
+                color: $color-primario;
             }
         }
     }
@@ -28,10 +28,11 @@ footer{
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        transition: all 3s;
-        img{
-            width: $fuente-grande;
-            height: auto;
+        a{
+            img{
+                width: $fuente-grande;
+                height: auto;
+            }
         }
     }
 }
