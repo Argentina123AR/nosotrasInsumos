@@ -637,6 +637,12 @@ h2{
         font-size: 40px;
     }
 }
+@media screen and (max-width: 800px){
+    .carousel-inner{
+        height: 550px;
+        margin-top: 50px;
+    }
+}
 
 
 @media screen and (max-width: 785px){
@@ -660,6 +666,10 @@ h2{
     .conocenos{
         background-position: 50%;
     }
+    .carousel-inner{
+        height: 500px;
+        margin-top: 0;
+    }
 }
 @media screen and (max-width: 690px){
     .columna-beauty div h5{
@@ -670,6 +680,10 @@ h2{
     }
     .columna-beauty div ol li{
         font-size: 20px;
+    }
+    .carousel-inner{
+        height: 500px;
+        margin-top: 60px;
     }
 }
 @media screen and (max-width: 675px){
@@ -700,7 +714,14 @@ h2{
     .a-curso{
         font-size: 90px;
     }
-
+    .carousel-inner{
+        height: 450px;
+    }
+}
+@media screen and (max-width: 535px){
+    .carousel-inner{
+        height: 400px;
+    }
 }
 
 
