@@ -455,25 +455,7 @@ footer ul li h3{
 
 /*--------productos de peluqueria----*/
 
-.tarjeta{
-    width: 100%;
-    height: 90vh;
-    background-image:url(../img/mujeres1-min.jpg) ;
-    background-size: cover;
-    background-position: 100%;
-    border: pink solid;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-.a-curso{
-    font-size: 120px;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 12px;
-    background-color: pink;
-    mix-blend-mode: screen;
-}
+
 
 /*---------main-------*/
 
@@ -635,14 +617,25 @@ h2{
 @media screen and (max-width: 847px){
     h1{
         font-size: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media screen and (max-width: 800px){
-    .carousel-inner{
-        height: 550px;
-        margin-top: 50px;
+    .columna-beauty div h5{
+        font-size: 40px;
+    }
+    .columna-beauty div p{
+        margin: 10px;
+        font-size: 16px;
+    }
+    .columna-beauty div ol li{
+        font-size: 16px;
     }
 }
+
 
 
 @media screen and (max-width: 785px){
@@ -666,35 +659,29 @@ h2{
     .conocenos{
         background-position: 50%;
     }
-    .carousel-inner{
-        height: 500px;
-        margin-top: 0;
+
+}
+@media screen and (max-width: 730px){
+    .conocenos{
+        height: 60vh;
+        background-color: #F900BF;
+        background-image: none;
+    }
+    .conocenos h5{
+        font-size: 60px;
+    }
+    .conocenos p{
+        color: #333;
+        font-size: 20px;
+        text-align: center;
+        background-color: pink;
+        opacity: 0.8;
     }
 }
-@media screen and (max-width: 690px){
-    .columna-beauty div h5{
-        font-size: 40px;
-    }
-    .columna-beauty div p{
-        font-size: 20px;
-    }
-    .columna-beauty div ol li{
-        font-size: 20px;
-    }
-    .carousel-inner{
-        height: 500px;
-        margin-top: 60px;
-    }
-}
+
 @media screen and (max-width: 675px){
     .columna-beauty{
         height: 70vh;
-    }
-    .columna-beauty div p{
-        font-size: 16px;
-    }
-    .columna-beauty div ol li{
-        font-size: 16px;
     }
 }
 
@@ -709,20 +696,100 @@ h2{
     .columna div p{
         font-size: 12px;
     }
+    h1{
+        font-size: 20px;
+    }
 }
+
 @media screen and (max-width: 620px){
     .a-curso{
         font-size: 90px;
     }
-    .carousel-inner{
-        height: 450px;
+}
+@media screen and (max-width: 618px){
+    main{
+        margin-top: 65px;
     }
 }
-@media screen and (max-width: 535px){
-    .carousel-inner{
-        height: 400px;
+
+@media screen and (max-width: 510px){
+    .columna div h5{
+        font-size: 16px;
+        width: 90%;
+    }
+    .conocenos{
+        height: 50vh;
+    }
+    .conocenos h5{
+        font-size: 40px;
+    }
+    .conocenos p{
+        font-size: 16px;
     }
 }
+@media screen and (max-width: 492px){
+    .columna-beauty{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../img/facial.jpg);
+        background-size: cover;
+        background-position: 100%;
+    }
+    .columna-beauty div h5{
+        font-size: 20px;
+    }
+    .columna-beauty div ol{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 470px){
+    h1{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 455px){
+    .columna div p{
+        width: 95%;
+        height: 100%;
+    }
+    .columna{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: pink;
+    }
+    .hero{
+        background-image: none;
+    }
+
+}
+@media screen and (max-width: 395px){
+    .conocenos{
+        height: 55vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .conocenos h5{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .conocenos p{
+        width: 90%;
+        height: 50vh;
+        font-size: 14px;
+    }
+}
+
+
 
 
 
