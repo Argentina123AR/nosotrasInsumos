@@ -771,7 +771,17 @@ h2{
         font-size: 14px;
     }
 }
-
+@media screen and (max-width: 300px){
+    .columna-beauty div h5{
+        font-size: 14px;
+    }
+    .columna-beauty div p{
+        font-size: 12px;
+    }
+    .columna-beauty div ol li{
+        font-size: 12px;
+    }
+}
 
 
 
