@@ -28,7 +28,6 @@ body {
         "footer footer";
 }
 
-/*------header----*/
 
 .header {
     width: 100%;
@@ -38,7 +37,7 @@ body {
 
 
 
-/*------main-----*/
+
 main {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 30px;
@@ -263,7 +262,7 @@ button :hover{
     align-items: center;
 }
 
-/*----footer----*/
+
 
 footer{
     background-image: radial-gradient(pink, #FFA1A1, #FF8AAE, #F900BF );;
@@ -305,14 +304,6 @@ footer ul li h3{
 
 
 
-
-
-
-/*css productos de uñas*/
-
-
-
-/*-----mainuñas------*/
 
 .grid-container{
     display: grid;
@@ -356,16 +347,6 @@ footer ul li h3{
 
 
 
-
-
-
-
-
-/*--------beauty------*/
-
-
-
-/*--------main-----*/
 .promociones{
     background-color: pink;
 }
@@ -452,17 +433,6 @@ footer ul li h3{
 
 
 
-
-/*--------productos de peluqueria----*/
-
-
-
-/*---------main-------*/
-
-
-
-
-/*-------cursos-------*/
 h2{
     background-color: #b9867e;
     color:pink;
@@ -575,7 +545,6 @@ h2{
 }
 
 
-/*----------media-------*/
 
 @media screen and (max-width: 1290px){
     .columna div h5{
