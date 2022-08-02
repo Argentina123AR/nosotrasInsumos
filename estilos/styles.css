@@ -513,7 +513,22 @@ h2{
     font-family:'Courier New', Courier, monospace;
     font-size: 20px;
     text-transform: capitalize;
+    width: 700px;
+    margin: 250px;
+}
+.formulario h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+.formulario form{
     margin: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 .conocenos{
     width: 100%;
