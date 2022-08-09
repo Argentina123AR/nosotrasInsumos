@@ -1,41 +1,3 @@
-let productosPromocionales = document .getElementById ("promo");
-
-
-productosPromocionales = [ 
-    {
-        promocion1: "vitaminac color",
-        precio:  1000,
-    },
-    {
-        promocion2: "serum hidratante facial",
-        precio: 1250,
-    },
-    {
-        prommocion3: "serum facial vitaminac",
-        precio: 1100,
-    },
-]
-
-//let dinero= prompt ("cuanto dinero tienes?");
-
-console.log(productosPromocionales.some( (elemento) => {
-    return elemento.precio > 1000
-}))
-
-let dineroDisponible = prompt ("cuánto dinero tienes?");
-
-if (dineroDisponible <= 1000){
-    alert ("te alcanza para la promocion1");
-} else {
-    if (dineroDisponible > 1000 && dineroDisponible <= 1100){
-        alert ("te alcanza para la promocion3");
-    }
-    else {
-        if(dineroDisponible >1100 && dineroDisponible <= 1250){
-            alert ("te alcanza para la promocion3")
-        }
-    }
-}
 
 const formulario = document.querySelector ("#formulario");
 const inputNombre = document.querySelector ("#nombre");
@@ -56,9 +18,39 @@ class clientes{
     }
 }
 
+const aJSONYSubirALs = (clave, valor) =>{
+    const clienteJSON = JSON.stringify(valor)
+    localStorage.setItem(clave, clienteJSON)
+}
+
 formulario.onsubmit = (event) => {
     event.preventDefault()
     console.log (event)
     clientes.push (new clientes (inputNombre.value, inputApellido.value, inputEdad.value, inputEmail.value, inputMensaje.value))
     console.log (clientes)
+    aJSONYSubirALs ("clientes", clientes)
 }
+const deLS = (clave) => {
+    const clientesTraidosdeLs = localStorage.getItem ("clientes")
+    const parsearclientes = JSON.parse ("clientesTraidosdelLS")
+    return parsearclientes
+}
+
+
+const btnAumentar = document.querySelector(".btn-info");
+const span = document.getElementById ("span");
+let contador = 0
+
+btnAumentar.addEventListener ("click", () => {
+    console.log("activaste aumentar")
+    contador++
+    span.textContent = contador
+})
+
+const btnDisminuir = document.querySelector (".btn-danger");
+
+btnDisminuir.addEventListener ("click",() =>{
+    contador--
+    span.textContent = contador
+})
+
