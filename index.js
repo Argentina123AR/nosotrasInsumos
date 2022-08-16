@@ -22,14 +22,19 @@ const aJSONYSubirALs = (clave, valor) =>{
     const clienteJSON = JSON.stringify(valor)
     localStorage.setItem(clave, clienteJSON)
 }
+formulario.onsubmit = (e) => {
+    e.preventDefault()
+    swal("se ha enviado correctamente");
 
-formulario.onsubmit = (event) => {
-    event.preventDefault()
-    console.log (event)
-    clientes.push (new clientes (inputNombre.value, inputApellido.value, inputEdad.value, inputEmail.value, inputMensaje.value))
-    console.log (clientes)
-    aJSONYSubirALs ("clientes", clientes)
 }
+
+//formulario.onsubmit = (event) => {
+  //  event.preventDefault()
+    //console.log (event)
+    //clientes.push (new clientes (inputNombre.value, inputApellido.value, inputEdad.value, inputEmail.value, inputMensaje.value))
+    //console.log (clientes)
+    //aJSONYSubirALs ("clientes", clientes)
+//}
 const deLS = (clave) => {
     const clientesTraidosdeLs = localStorage.getItem ("clientes")
     const parsearclientes = JSON.parse ("clientesTraidosdelLS")
@@ -53,4 +58,6 @@ btnDisminuir.addEventListener ("click",() =>{
     contador--
     span.textContent = contador
 })
+
+//librerias//
 
